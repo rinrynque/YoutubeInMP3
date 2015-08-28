@@ -11,3 +11,6 @@ If you have any issue, please post a feedback (it's easy you don't even have to 
 
 uses youtubeinmp3.com api 
 http://youtubeinmp3.com/api/
+
+![simple link next to thumb buttons](https://greasyfork.org/system/screenshots/screenshots/000/001/837/original/2015-08-27_22-56-06.png?1440709038)
+![Click plus to show the link](https://greasyfork.org/system/screenshots/screenshots/000/001/839/original/2015-08-28_01-13-10.gif?1440717295)
