@@ -2,15 +2,20 @@
 	// @name                YoutubeInMP3
 	// @namespace	        tag:rinrynque@protonmail.ch,2015-08-27:YoutubeInMP3
 	// @description	        simple button to download an mp3 from youtube
-	// @include		https://www.youtube.com/watch*
-	// @include		https://youtube.com/watch*
-	// @include		http://www.youtube.com/watch*
-	// @include		http://youtube.com/watch*
+	// @include		https://www.youtube.com/*
+	// @include		https://youtube.com/*
+	// @include		http://www.youtube.com/*
+	// @include		http://youtube.com/*
+// @version 0.0.1.20150829204443
 	// ==/UserScript==
 
-setInterval(function(){
-var el = document.getElementById("action-panel-overflow-button");
-el.addEventListener("click", addDlLink, false);}, 3000);
+setInterval(setSpawn, 4000);
+
+
+function setSpawn (){
+	var el = document.getElementById("action-panel-overflow-button");
+	el.addEventListener("click", addDlLink, false);
+}
 
 function addDlLink () {
 	if (!document.getElementById('DLButton'))
