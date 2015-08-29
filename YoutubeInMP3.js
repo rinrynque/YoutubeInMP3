@@ -7,8 +7,10 @@
 	// @include		http://www.youtube.com/watch*
 	// @include		http://youtube.com/watch*
 	// ==/UserScript==
+
+setTimeout(function(){
 var el = document.getElementById("action-panel-overflow-button");
-el.addEventListener("click", addDlLink, false);
+el.addEventListener("click", addDlLink, false);}, 3000);
 
 function addDlLink () {
 	if (!document.getElementById('DLButton'))
