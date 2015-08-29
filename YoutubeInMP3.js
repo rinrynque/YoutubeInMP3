@@ -11,8 +11,7 @@ var el = document.getElementById("action-panel-overflow-button");
 el.addEventListener("click", addDlLink, false);
 
 function addDlLink () {
-	var dlButton = document.getElementById('DLButton');
-	if (!dlButton)
+	if (!document.getElementById('DLButton'))
 	{
 	var elmNewContent = document.createElement('a');
 	elmNewContent.id = 'DLButton';
@@ -23,6 +22,7 @@ function addDlLink () {
 	}
 	else
 	{
+		var dlButton = document.getElementById('DLButton');
 		dlButton.parentNode.removeChild(dlButton);
 	}
 }
